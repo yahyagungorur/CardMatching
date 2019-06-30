@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yahyagungorur.newapp.Main2Activity"
+    android:background="@drawable/background"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/nametext"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/background_shape"
+        android:padding="5dp"/>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gr"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        >
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/hamle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:textSize="15dp"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/nametext"
+        android:layout_alignRight="@+id/nametext"
+        android:layout_alignEnd="@+id/nametext"
+        android:background="@drawable/background_shape"
+        android:padding="5dp"/>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/reklam_id">
+    </com.google.android.gms.ads.AdView>
+
+
+
+</RelativeLayout>

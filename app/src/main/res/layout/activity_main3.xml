@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yahyagungorur.newapp.Main3Activity"
+    android:id="@+id/rl"
+    android:background="@drawable/background"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hamle2"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+       android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        />
+    <Button
+        android:id="@+id/newgame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/newgame"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/hamle2"
+        android:layout_marginTop="80dp"
+      />
+    <Button
+        android:id="@+id/skors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/scores"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/newgame"
+        android:layout_marginTop="60dp"
+        />
+
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/exit"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/skors"
+        android:layout_marginTop="60dp"
+        />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/reklam_id">
+    </com.google.android.gms.ads.AdView>
+
+
+
+
+</RelativeLayout>

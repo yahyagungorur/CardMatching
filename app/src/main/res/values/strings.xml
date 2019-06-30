@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="app_name">Matching Cards</string>
+    <string name="welcome">WELCOME</string>
+    <string name="hint">Name</string>
+    <string name="move">Number of Move:</string>
+    <string name="cong">Congratulations !</string>
+    <string name="newgame">NEW GAME</string>
+    <string name="exit">EXIT</string>
+    <string name="warning">This field is required !</string>
+    <string name="reklam_id" translatable="false">ca-app-pub-9490732080741019/1005574464</string>
+    <string name="reklam_id_gecis" translatable="false">ca-app-pub-9490732080741019/1437102115</string>
+    <string name="scores">Scores</string>
+    <string name="back">BACK</string>
+
+</resources>

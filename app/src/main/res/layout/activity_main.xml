@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yahyagungorur.newapp.MainActivity"
+    android:background="@drawable/background">
+
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/hint"
+        android:gravity="center"
+        android:layout_below="@+id/welcome"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        />
+
+    <Button
+        android:id="@+id/ikiiki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/name"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="40dp"
+        android:text="2 X 2"
+        android:onClick="clicked"/>
+    <Button
+        android:id="@+id/dortuc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/name"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp"
+        android:text="4 X 3"
+        android:onClick="clicked"/>
+
+    <Button
+        android:id="@+id/ikiuc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ikiiki"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="40dp"
+        android:text="2 X 3"
+        android:onClick="clicked"/>
+
+    <Button
+        android:id="@+id/dortdort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/dortuc"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp"
+        android:text="4 X 4"
+        android:onClick="clicked"/>
+
+    <Button
+        android:id="@+id/ikidort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ikiuc"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="40dp"
+        android:text="2 X 4"
+        android:onClick="clicked"/>
+
+    <Button
+        android:id="@+id/dortbes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/dortdort"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp"
+        android:text="4 X 5"
+        android:onClick="clicked"/>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/reklam_id">
+    </com.google.android.gms.ads.AdView>
+
+    <Button
+        android:id="@+id/scr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:layout_above="@+id/adView"
+        android:text="@string/scores"
+        />
+
+
+</RelativeLayout>

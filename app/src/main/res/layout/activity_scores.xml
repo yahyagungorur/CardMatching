@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yahyagungorur.newapp.Scores">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/scores"
+        android:id="@+id/skorlar"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="15dp"
+        />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@android:id/list"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/skorlar"
+        android:layout_above="@+id/back"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/back"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/adView"/>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/reklam_id">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

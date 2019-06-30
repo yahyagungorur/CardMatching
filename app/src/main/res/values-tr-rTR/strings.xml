@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Matching Cards</string>
+    <string name="welcome">HOŞGELDİNİZ</string>
+    <string name="hint">İsim</string>
+    <string name="move">Hamle sayısı:</string>
+    <string name="cong">Tebrikler !</string>
+    <string name="newgame">YENI OYUN</string>
+    <string name="exit">ÇIKIŞ</string>
+    <string name="warning">Bu alan boş bırakılamaz !</string>
+    <string name="scores">SKORLAR</string>
+    <string name="back">GERİ</string>
+
+</resources>
